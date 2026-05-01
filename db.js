@@ -6,7 +6,7 @@ async function connectDB() {
 }
 
 const jobSchema = new mongoose.Schema({
-  job_id: { type: Number, unique: true },
+  job_id: { type: Number, unique: true, index: true },
   title: String,
   url: String,
   created_at: { type: Date, default: Date.now }
