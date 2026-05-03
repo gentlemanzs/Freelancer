@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const API_URL = "https://www.freelancer.com/api/projects/0.1/projects/active/";
-const KEYWORDS = ["vietnamese", "viet", "việt"];
+const KEYWORDS = ["vietnamese", "vietnam", "việt"];
 
 async function fetchJobs() {
   const { data } = await axios.get(API_URL, {
